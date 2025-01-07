@@ -10,5 +10,8 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.second_activity)
+
+        var count = intent.getStringExtra("Count_hour")
+        var discount = intent.getStringExtra("Discount")
     }
 }
